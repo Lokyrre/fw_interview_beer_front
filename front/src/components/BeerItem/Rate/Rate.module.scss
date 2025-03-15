@@ -4,6 +4,9 @@ $size: 3rem;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  > button {
+    border: 0;
+  }
 }
 .inLove {
   background: url(../../../assets/svg/in-love.svg);

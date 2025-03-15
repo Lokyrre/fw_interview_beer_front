@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { BeerItem } from "../BeerItem";
 import { Loader } from "../Loader";
 
 import styles from "./BeerList.module.scss";
 import { BeerListProps } from "./BeerList";
+import BeerItem from "../BeerItem";
 
 export const BeerList: FC<BeerListProps> = ({ beers, loading }) => (
   <div className={styles.Beerlist}>

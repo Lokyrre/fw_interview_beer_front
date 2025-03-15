@@ -22,9 +22,18 @@ export const beerActions = {
     type: BeerActionTypes.BEERS_CREATE,
     beer,
   }),
+  updateBeer: (beer: Beer) => ({
+    type: BeerActionTypes.BEERS_UPDATE,
+    beer
+  }),
   setNewlyCreatedBeer: (beer: Beer) => ({
     type: BeerActionTypes.BEERS_SET_NEW,
     beer,
+  }),
+  rateBeer: (uuid: Beer["uuid"], score: number) => ({
+    type: BeerActionTypes.BEERS_RATE,
+    uuid,
+    score
   }),
 } as const
 
